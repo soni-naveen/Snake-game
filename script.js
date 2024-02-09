@@ -38,7 +38,7 @@ function loop() {
   animationId = requestAnimationFrame(loop);
 
   // slow game loop to 15 fps instead of 60 (60/15 = 4)
-  if (count++ < 4) {
+  if (count++ < 7) {
     return;
   }
 
