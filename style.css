@@ -5,15 +5,22 @@ body {
 }
 
 body {
-  background: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/backgroundimg.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+#score {
+  margin-top: 5px;
+}
+
 h3 {
-  font-family: sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
   color: white;
 }
@@ -21,33 +28,37 @@ h3 {
 p {
   color: white;
   font-family: sans-serif;
-  font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   letter-spacing: 0.5px;
   font-size: 15px;
   margin: 5px;
 }
 canvas {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(156, 192, 160, 0.7);
   border-radius: 3px;
 }
 .button {
-  width: 250px;
+  width: 230px;
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
 }
 .btn {
   font-size: 17px;
-  font-family: sans-serif;
-  background-color: rgb(154, 226, 249);
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(154, 249, 174);
+  transition-duration: 0.5s;
   border: none;
-  border-radius: 50px;
-  width: 100px;
-  padding: 7px 15px;
+  border-radius: 2px;
+  width: 80px;
+  padding: 7px;
+  font-weight: bolder;
 }
 .btn:hover {
   cursor: pointer;
-  background-color: rgb(99, 208, 244);
+  transition-duration: 0.5s;
+  background-color: rgb(99, 208, 123);
 }
 .mobile-mode {
   width: 300px;
@@ -83,18 +94,18 @@ canvas {
     justify-content: flex-start;
     margin-top: 30px;
   }
-  canvas{
+  canvas {
     height: 250px;
     width: 250px;
   }
-  .text{
+  .text {
     display: none;
   }
-  .button{
+  .button {
     margin-bottom: 20px;
   }
-  .mobile-mode{
+  .mobile-mode {
     display: flex;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 }
