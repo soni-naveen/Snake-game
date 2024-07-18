@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="preload" href="./style.css" as="style" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p id="hs">HighScore: <span id="hsvalue">0</span></p>
+    <h3 id="score">Score : <span id="value">0</span></h3>
+
+    <canvas width="400" height="400" id="game"></canvas>
+    <div class="button">
+      <button id="pause-play" class="btn">Pause/Play</button>
+    </div>
+    <p class="text">or</p>
+    <p class="text">Use "Enter" for Pause/Play</p>
+    <div class="mobile-mode">
+      <div class="up-down">
+        <button class="ctrl-btns top">
+          <img src="./assets/arrow-up.svg" alt="⬆️" />
+        </button>
+        <button class="ctrl-btns down">
+          <img src="./assets/arrow-down.svg" alt="⬆️" />
+        </button>
+      </div>
+      <div class="left-right">
+        <button class="ctrl-btns left">
+          <img src="./assets/arrow-left.svg" alt="⬆️" />
+        </button>
+        <button class="ctrl-btns right">
+          <img src="./assets/arrow-right.svg" alt="⬆️" />
+        </button>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
+
+<!-- Async downloads and executes JavaScript as soon as it’s available, while defer attribute waits until the HTML document has been parsed before downloading and executing any external scripts. -->
