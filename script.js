@@ -79,7 +79,7 @@ function loop() {
 
   // The fillRect() method draws a "filled" rectangle.
   // context.fillRect(x, y, width, height)
-  context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+  context.fillRect(apple.x, apple.y, grid, grid);
 
   // draw snake one cell at a time
   context.fillStyle = "#3eba25";
