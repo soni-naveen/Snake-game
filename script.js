@@ -39,7 +39,7 @@ function loop() {
   animationId = requestAnimationFrame(loop);
   // The requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint.
 
-  if (count++ < 7) {
+  if (count++ < 9) {
     return;
   }
   // This line increases the count variable by 1 with each frame and checks if it is less than 7
